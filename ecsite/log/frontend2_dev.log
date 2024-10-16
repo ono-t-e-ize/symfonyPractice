@@ -1,0 +1,66 @@
+Oct 16 10:47:35 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 10:47:35 symfony [info] {sfFrontWebController} Action "product/index" does not exist
+Oct 16 10:47:35 symfony [err] {sfError404Exception} Action "product/index" does not exist.
+Oct 16 10:47:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 16 10:47:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 10:47:35 symfony [info] {sfWebDebugLogger} Configuration 34.94 ms (6)
+Oct 16 10:47:35 symfony [info] {sfWebDebugLogger} Factories 50.99 ms (1)
+Oct 16 10:47:46 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 10:47:46 symfony [info] {sfFrontWebController} Action "product/index" does not exist
+Oct 16 10:47:46 symfony [err] {sfError404Exception} Action "product/index" does not exist.
+Oct 16 10:47:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 16 10:47:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 10:47:46 symfony [info] {sfWebDebugLogger} Configuration 5.81 ms (5)
+Oct 16 10:47:46 symfony [info] {sfWebDebugLogger} Factories 24.97 ms (1)
+Oct 16 10:47:54 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /index with parameters array (  'module' => 'index',  'action' => 'index',)
+Oct 16 10:47:54 symfony [info] {sfFrontWebController} Action "index/index" does not exist
+Oct 16 10:47:54 symfony [err] {sfError404Exception} Action "index/index" does not exist.
+Oct 16 10:47:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 16 10:47:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 10:47:54 symfony [info] {sfWebDebugLogger} Configuration 5.53 ms (5)
+Oct 16 10:47:54 symfony [info] {sfWebDebugLogger} Factories 26.10 ms (1)
+Oct 16 10:47:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 10:47:58 symfony [info] {sfFrontWebController} Action "product/index" does not exist
+Oct 16 10:47:58 symfony [err] {sfError404Exception} Action "product/index" does not exist.
+Oct 16 10:47:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 16 10:47:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 10:47:58 symfony [info] {sfWebDebugLogger} Configuration 5.52 ms (5)
+Oct 16 10:47:58 symfony [info] {sfWebDebugLogger} Factories 24.40 ms (1)
+Oct 16 10:48:06 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 10:48:06 symfony [info] {sfFrontWebController} Action "product/index" does not exist
+Oct 16 10:48:06 symfony [err] {sfError404Exception} Action "product/index" does not exist.
+Oct 16 10:48:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 16 10:48:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 10:48:06 symfony [info] {sfWebDebugLogger} Configuration 5.77 ms (5)
+Oct 16 10:48:06 symfony [info] {sfWebDebugLogger} Factories 18.34 ms (1)
+Oct 16 10:48:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /cart with parameters array (  'module' => 'cart',  'action' => 'index',)
+Oct 16 10:48:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 10:48:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 10:48:13 symfony [info] {cartActions} Call "cartActions->executeIndex()"
+Oct 16 10:48:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 16 10:48:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.user_id AS c__user_id, c.product_id AS c__product_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cart c - ()
+Oct 16 10:48:13 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend2\modules/cart/templates/indexSuccess.php"
+Oct 16 10:49:37 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /cart with parameters array (  'module' => 'cart',  'action' => 'index',)
+Oct 16 10:49:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 10:49:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 10:49:37 symfony [info] {cartActions} Call "cartActions->executeIndex()"
+Oct 16 10:49:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 16 10:49:37 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.user_id AS c__user_id, c.product_id AS c__product_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cart c - ()
+Oct 16 10:49:37 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend2\modules/cart/templates/indexSuccess.php"
+Oct 16 10:49:37 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend2\templates/layout.php"
+Oct 16 10:49:37 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend2\templates/layout.php"
+Oct 16 10:49:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 16 10:49:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 10:49:37 symfony [info] {sfWebDebugLogger} Configuration 10.53 ms (9)
+Oct 16 10:49:37 symfony [info] {sfWebDebugLogger} Factories 23.85 ms (1)
+Oct 16 10:49:37 symfony [info] {sfWebDebugLogger} Action "cart/index" 41.31 ms (1)
+Oct 16 10:49:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.44 ms (2)
+Oct 16 10:49:37 symfony [info] {sfWebDebugLogger} View "Success" for "cart/index" 11.44 ms (1)
+Oct 16 10:49:37 symfony [info] {sfWebResponse} Send content (36594 o)
+Oct 16 10:49:44 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 10:49:44 symfony [info] {sfFrontWebController} Action "product/index" does not exist
+Oct 16 10:49:44 symfony [err] {sfError404Exception} Action "product/index" does not exist.
+Oct 16 10:49:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 16 10:49:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 10:49:44 symfony [info] {sfWebDebugLogger} Configuration 4.76 ms (5)
+Oct 16 10:49:44 symfony [info] {sfWebDebugLogger} Factories 25.48 ms (1)
