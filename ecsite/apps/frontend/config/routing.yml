@@ -6,6 +6,11 @@ homepage:
   url:   /
   param: { module: default, action: index }
 
+product:
+  url:   /product
+  param: { module: product, action: index }
+  
+
 # generic rules
 # please, remove them by adding more specific rules
 default_index:
@@ -14,3 +19,8 @@ default_index:
 
 default:
   url:   /:module/:action/*
+
+order:
+  url:   /order
+  param: { module: order, action: index }
+

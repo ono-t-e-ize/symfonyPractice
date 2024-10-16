@@ -2,8 +2,9 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title><?php include_partial('global/title') ?></title>
     <link rel="stylesheet" href="<?php echo stylesheet_path('main') ?>">
+    <?php include_javascripts() ?>
+    <?php include_stylesheets() ?>
 </head>
 <body>
     <header>

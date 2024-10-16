@@ -1,0 +1,226 @@
+Oct 16 09:49:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/index with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 09:49:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 09:49:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 09:49:08 symfony [info] {productActions} Call "productActions->executeIndex()"
+Oct 16 09:49:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 16 09:49:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.price AS p__price, p.description AS p__description, p.image AS p__image, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Oct 16 09:49:08 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/indexSuccess.php"
+Oct 16 09:49:08 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:49:08 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:49:08 symfony [err] {sfRenderException} The template "_title.php" does not exist or is unreadable in "".
+Oct 16 09:49:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Oct 16 09:49:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:49:08 symfony [info] {sfWebDebugLogger} Configuration 180.93 ms (9)
+Oct 16 09:49:08 symfony [info] {sfWebDebugLogger} Factories 80.93 ms (1)
+Oct 16 09:49:08 symfony [info] {sfWebDebugLogger} Action "product/index" 61.47 ms (1)
+Oct 16 09:49:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.73 ms (2)
+Oct 16 09:49:08 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 66.67 ms (1)
+Oct 16 09:49:08 symfony [info] {sfWebDebugLogger} Partial "global/_title" 38.34 ms (1)
+Oct 16 09:49:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/index with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 09:49:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 09:49:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 09:49:44 symfony [info] {productActions} Call "productActions->executeIndex()"
+Oct 16 09:49:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 16 09:49:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.price AS p__price, p.description AS p__description, p.image AS p__image, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Oct 16 09:49:44 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/indexSuccess.php"
+Oct 16 09:49:44 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:49:44 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:49:44 symfony [err] {sfRenderException} The template "_title.php" does not exist or is unreadable in "".
+Oct 16 09:49:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Oct 16 09:49:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:49:44 symfony [info] {sfWebDebugLogger} Configuration 24.16 ms (9)
+Oct 16 09:49:44 symfony [info] {sfWebDebugLogger} Factories 49.57 ms (1)
+Oct 16 09:49:44 symfony [info] {sfWebDebugLogger} Action "product/index" 72.40 ms (1)
+Oct 16 09:49:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.71 ms (2)
+Oct 16 09:49:44 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 72.19 ms (1)
+Oct 16 09:49:44 symfony [info] {sfWebDebugLogger} Partial "global/_title" 44.19 ms (1)
+Oct 16 09:50:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/index with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 09:50:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 09:50:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 09:50:44 symfony [info] {productActions} Call "productActions->executeIndex()"
+Oct 16 09:50:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 16 09:50:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.price AS p__price, p.description AS p__description, p.image AS p__image, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Oct 16 09:50:44 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/indexSuccess.php"
+Oct 16 09:50:44 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:50:44 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:50:44 symfony [err] {sfRenderException} The template "_title.php" does not exist or is unreadable in "".
+Oct 16 09:50:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Oct 16 09:50:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:50:44 symfony [info] {sfWebDebugLogger} Configuration 25.74 ms (9)
+Oct 16 09:50:44 symfony [info] {sfWebDebugLogger} Factories 45.33 ms (1)
+Oct 16 09:50:44 symfony [info] {sfWebDebugLogger} Action "product/index" 65.70 ms (1)
+Oct 16 09:50:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.81 ms (2)
+Oct 16 09:50:44 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 66.52 ms (1)
+Oct 16 09:50:44 symfony [info] {sfWebDebugLogger} Partial "global/_title" 48.06 ms (1)
+Oct 16 09:51:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/index with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 09:51:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 09:51:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 09:51:43 symfony [info] {productActions} Call "productActions->executeIndex()"
+Oct 16 09:51:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 16 09:51:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.price AS p__price, p.description AS p__description, p.image AS p__image, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Oct 16 09:51:43 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/indexSuccess.php"
+Oct 16 09:51:43 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:51:43 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:51:43 symfony [err] {sfRenderException} The template "_title.php" does not exist or is unreadable in "".
+Oct 16 09:51:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Oct 16 09:51:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:51:43 symfony [info] {sfWebDebugLogger} Configuration 18.35 ms (9)
+Oct 16 09:51:43 symfony [info] {sfWebDebugLogger} Factories 45.71 ms (1)
+Oct 16 09:51:43 symfony [info] {sfWebDebugLogger} Action "product/index" 55.46 ms (1)
+Oct 16 09:51:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.56 ms (2)
+Oct 16 09:51:43 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 62.45 ms (1)
+Oct 16 09:51:43 symfony [info] {sfWebDebugLogger} Partial "global/_title" 40.56 ms (1)
+Oct 16 09:53:02 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/index with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 09:53:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 09:53:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 09:53:02 symfony [info] {productActions} Call "productActions->executeIndex()"
+Oct 16 09:53:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 16 09:53:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.price AS p__price, p.description AS p__description, p.image AS p__image, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Oct 16 09:53:02 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/indexSuccess.php"
+Oct 16 09:53:02 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:53:02 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:53:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 16 09:53:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:53:02 symfony [info] {sfWebDebugLogger} Configuration 17.18 ms (9)
+Oct 16 09:53:02 symfony [info] {sfWebDebugLogger} Factories 44.37 ms (1)
+Oct 16 09:53:02 symfony [info] {sfWebDebugLogger} Action "product/index" 58.47 ms (1)
+Oct 16 09:53:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.80 ms (2)
+Oct 16 09:53:02 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 14.75 ms (1)
+Oct 16 09:53:02 symfony [info] {sfWebResponse} Send content (37177 o)
+Oct 16 09:54:50 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /order with parameters array (  'module' => 'order',  'action' => 'index',)
+Oct 16 09:54:50 symfony [info] {sfFrontWebController} Action "order/index" does not exist
+Oct 16 09:54:50 symfony [err] {sfError404Exception} Action "order/index" does not exist.
+Oct 16 09:54:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 16 09:54:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:54:50 symfony [info] {sfWebDebugLogger} Configuration 8.73 ms (5)
+Oct 16 09:54:50 symfony [info] {sfWebDebugLogger} Factories 40.90 ms (1)
+Oct 16 09:54:53 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/index with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 09:54:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 09:54:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 09:54:53 symfony [info] {productActions} Call "productActions->executeIndex()"
+Oct 16 09:54:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 16 09:54:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.price AS p__price, p.description AS p__description, p.image AS p__image, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Oct 16 09:54:53 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/indexSuccess.php"
+Oct 16 09:54:53 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:54:53 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:54:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 16 09:54:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:54:53 symfony [info] {sfWebDebugLogger} Configuration 16.29 ms (9)
+Oct 16 09:54:53 symfony [info] {sfWebDebugLogger} Factories 38.87 ms (1)
+Oct 16 09:54:53 symfony [info] {sfWebDebugLogger} Action "product/index" 50.91 ms (1)
+Oct 16 09:54:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.73 ms (2)
+Oct 16 09:54:53 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 20.74 ms (1)
+Oct 16 09:54:53 symfony [info] {sfWebResponse} Send content (37146 o)
+Oct 16 09:55:03 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/new with parameters array (  'module' => 'product',  'action' => 'new',)
+Oct 16 09:55:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 09:55:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 09:55:03 symfony [info] {productActions} Call "productActions->executeNew()"
+Oct 16 09:55:03 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/newSuccess.php"
+Oct 16 09:55:03 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/_form.php"
+Oct 16 09:55:03 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:55:03 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:55:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 16 09:55:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:55:03 symfony [info] {sfWebDebugLogger} Configuration 17.36 ms (9)
+Oct 16 09:55:03 symfony [info] {sfWebDebugLogger} Factories 47.79 ms (1)
+Oct 16 09:55:03 symfony [info] {sfWebDebugLogger} Action "product/new" 34.76 ms (1)
+Oct 16 09:55:03 symfony [info] {sfWebDebugLogger} View "Success" for "product/new" 30.44 ms (1)
+Oct 16 09:55:03 symfony [info] {sfWebDebugLogger} Partial "product/_form" 15.68 ms (1)
+Oct 16 09:55:03 symfony [info] {sfWebResponse} Send content (49220 o)
+Oct 16 09:55:16 symfony [info] {sfPatternRouting} Match route "product" (/product) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 09:55:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 09:55:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 09:55:16 symfony [info] {productActions} Call "productActions->executeIndex()"
+Oct 16 09:55:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 16 09:55:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.price AS p__price, p.description AS p__description, p.image AS p__image, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Oct 16 09:55:16 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/indexSuccess.php"
+Oct 16 09:55:16 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:55:16 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:55:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 16 09:55:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:55:16 symfony [info] {sfWebDebugLogger} Configuration 18.23 ms (9)
+Oct 16 09:55:16 symfony [info] {sfWebDebugLogger} Factories 40.01 ms (1)
+Oct 16 09:55:16 symfony [info] {sfWebDebugLogger} Action "product/index" 54.28 ms (1)
+Oct 16 09:55:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.70 ms (2)
+Oct 16 09:55:16 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 25.30 ms (1)
+Oct 16 09:55:16 symfony [info] {sfWebResponse} Send content (37209 o)
+Oct 16 09:57:14 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/new with parameters array (  'module' => 'product',  'action' => 'new',)
+Oct 16 09:57:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 09:57:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 09:57:15 symfony [info] {productActions} Call "productActions->executeNew()"
+Oct 16 09:57:15 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/newSuccess.php"
+Oct 16 09:57:15 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/_form.php"
+Oct 16 09:57:15 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:57:15 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:57:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 16 09:57:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:57:15 symfony [info] {sfWebDebugLogger} Configuration 18.18 ms (9)
+Oct 16 09:57:15 symfony [info] {sfWebDebugLogger} Factories 43.39 ms (1)
+Oct 16 09:57:15 symfony [info] {sfWebDebugLogger} Action "product/new" 32.10 ms (1)
+Oct 16 09:57:15 symfony [info] {sfWebDebugLogger} View "Success" for "product/new" 31.56 ms (1)
+Oct 16 09:57:15 symfony [info] {sfWebDebugLogger} Partial "product/_form" 13.34 ms (1)
+Oct 16 09:57:15 symfony [info] {sfWebResponse} Send content (49183 o)
+Oct 16 09:57:16 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/index with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 09:57:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 09:57:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 09:57:16 symfony [info] {productActions} Call "productActions->executeIndex()"
+Oct 16 09:57:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 16 09:57:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.price AS p__price, p.description AS p__description, p.image AS p__image, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Oct 16 09:57:16 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/indexSuccess.php"
+Oct 16 09:57:16 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:57:16 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:57:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 16 09:57:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:57:16 symfony [info] {sfWebDebugLogger} Configuration 21.75 ms (9)
+Oct 16 09:57:16 symfony [info] {sfWebDebugLogger} Factories 50.52 ms (1)
+Oct 16 09:57:16 symfony [info] {sfWebDebugLogger} Action "product/index" 46.70 ms (1)
+Oct 16 09:57:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.66 ms (2)
+Oct 16 09:57:16 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 21.84 ms (1)
+Oct 16 09:57:16 symfony [info] {sfWebResponse} Send content (37147 o)
+Oct 16 09:57:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/index with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 09:57:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 09:57:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 09:57:19 symfony [info] {productActions} Call "productActions->executeIndex()"
+Oct 16 09:57:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 16 09:57:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.price AS p__price, p.description AS p__description, p.image AS p__image, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Oct 16 09:57:19 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/indexSuccess.php"
+Oct 16 09:57:19 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:57:19 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:57:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 16 09:57:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:57:19 symfony [info] {sfWebDebugLogger} Configuration 16.91 ms (9)
+Oct 16 09:57:19 symfony [info] {sfWebDebugLogger} Factories 39.80 ms (1)
+Oct 16 09:57:19 symfony [info] {sfWebDebugLogger} Action "product/index" 51.35 ms (1)
+Oct 16 09:57:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.79 ms (2)
+Oct 16 09:57:19 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 20.69 ms (1)
+Oct 16 09:57:19 symfony [info] {sfWebResponse} Send content (37147 o)
+Oct 16 09:57:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/show with parameters array (  'module' => 'product',  'action' => 'show',)
+Oct 16 09:57:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 09:57:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 09:57:25 symfony [info] {productActions} Call "productActions->executeShow()"
+Oct 16 09:57:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 16 09:57:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.price AS p__price, p.description AS p__description, p.image AS p__image, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p WHERE (p.id = ?) LIMIT 1 - ()
+Oct 16 09:57:25 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "product/show".
+Oct 16 09:57:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 16 09:57:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:57:25 symfony [info] {sfWebDebugLogger} Configuration 14.07 ms (8)
+Oct 16 09:57:25 symfony [info] {sfWebDebugLogger} Factories 38.66 ms (1)
+Oct 16 09:57:25 symfony [info] {sfWebDebugLogger} Action "product/show" 82.12 ms (1)
+Oct 16 09:57:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.66 ms (2)
+Oct 16 09:58:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/index with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 16 09:58:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 16 09:58:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 16 09:58:33 symfony [info] {productActions} Call "productActions->executeIndex()"
+Oct 16 09:58:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 16 09:58:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.price AS p__price, p.description AS p__description, p.image AS p__image, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Oct 16 09:58:33 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/indexSuccess.php"
+Oct 16 09:58:33 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:58:33 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 16 09:58:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 16 09:58:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 16 09:58:33 symfony [info] {sfWebDebugLogger} Configuration 20.20 ms (9)
+Oct 16 09:58:33 symfony [info] {sfWebDebugLogger} Factories 40.74 ms (1)
+Oct 16 09:58:33 symfony [info] {sfWebDebugLogger} Action "product/index" 51.72 ms (1)
+Oct 16 09:58:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.71 ms (2)
+Oct 16 09:58:33 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 20.93 ms (1)
+Oct 16 09:58:33 symfony [info] {sfWebResponse} Send content (37147 o)
