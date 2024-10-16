@@ -1,0 +1,49 @@
+# ユーザー情報テーブル
+User:
+  actAs: { Timestampable: ~ }
+  columns:
+    id: { type: integer, primary: true, autoincrement: true }
+    last_name: { type: string(255) }
+    first_name: { type: string(255) }
+    email: { type: string(255), notnull: true, unique: true }
+    phone: { type: string(20) }
+    password: { type: string(255) }
+    address: { type: text }
+
+  relations:
+    Cart: { onDelete: CASCADE, local: id, foreign: user_id, foreignAlias: UserCarts }
+
+# 商品情報テーブル
+Product:
+  actAs: { Timestampable: ~ }
+  columns:
+    id: { type: integer, primary: true, autoincrement: true }
+    name: { type: string(255), notnull: true }
+    price: { type: decimal, scale: 2 }  # precisionを削除
+    description: { type: text }
+    image: { type: string(255) }
+
+  relations:
+    Cart: { onDelete: CASCADE, local: id, foreign: product_id, foreignAlias: ProductCarts }
+
+# 注文情報テーブル
+OrderDetail:
+  actAs: { Timestampable: ~ }
+  columns:
+    id: { type: integer, primary: true, autoincrement: true }
+    product_name: { type: string(255) }
+    total_amount: { type: decimal, scale: 2, notnull: true }
+    customer_name: { type: string(255) }
+    delivery_address: { type: text }
+
+# カート内情報
+Cart:
+  actAs: { Timestampable: ~ }
+  columns:
+    id: { type: integer, primary: true, autoincrement: true }
+    user_id: { type: integer, notnull: true }
+    product_id: { type: integer, notnull: true }
+
+  relations:
+    User: { onDelete: CASCADE, local: user_id, foreign: id }
+    Product: { onDelete: CASCADE, local: product_id, foreign: id }
