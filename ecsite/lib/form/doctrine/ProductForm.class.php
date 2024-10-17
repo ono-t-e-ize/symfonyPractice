@@ -10,7 +10,10 @@
  */
 class ProductForm extends BaseProductForm
 {
-  public function configure()
-  {
-  }
+    public function configure()
+    {
+        // created_atとupdated_atフィールドをオプショナルに設定
+        $this->validatorSchema['created_at'] = new sfValidatorDateTime(array('required' => false));
+        $this->validatorSchema['updated_at'] = new sfValidatorDateTime(array('required' => false));
+    }
 }

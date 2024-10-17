@@ -42,8 +42,20 @@ class productActions extends sfActions
 
     public function executeEdit(sfWebRequest $request)
     {
-        $this->forward404Unless($product = Doctrine_Core::getTable('Product')->find(array($request->getParameter('id'))), sprintf('Object product does not exist (%s).', $request->getParameter('id')));
-        $this->form = new ProductForm($product);
+        $productId = $request->getParameter('id');
+        $this->product = Doctrine_Core::getTable('Product')->find(array($productId));
+        $this->forward404Unless($this->product, sprintf('Object product does not exist (%s).', $productId));
+    
+        $this->form = new ProductForm($this->product);
+    
+        if ($request->isMethod('post')) {
+            $this->form->bind($request->getParameter($this->form->getName()));
+            if ($this->form->isValid()) {
+                $this->form->save();
+                // 成功時のリダイレクト
+                $this->redirect('product/index');
+            }
+        }
     }
 
     public function executeUpdate(sfWebRequest $request)

@@ -41,6 +41,6 @@
 
 <hr />
 
-<a href="<?php echo url_for('product/edit?id=' . $product->getId()) ?>">Edit</a>
+<a href="<?php echo url_for('product/edit?id=' . $product->getId()) ?>">編集</a>
 &nbsp;
-<a href="<?php echo url_for('product/index') ?>">List</a>
+<a href="<?php echo url_for('product/index') ?>">商品一覧へ戻る</a>

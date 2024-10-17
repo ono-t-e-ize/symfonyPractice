@@ -10,9 +10,6 @@
     <header>
         <div class="header-content">
             <h1>ECサイト</h1>
-            <div class="order-info">
-                <a href="<?php echo url_for('@order') ?>" class="button">注文情報</a>
-            </div>
         </div>
     </header>
 
