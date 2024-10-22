@@ -33,3 +33,12 @@ all:
 
     # Enable the database manager
     use_database:           true
+
+all:
+  .settings:
+    security:
+      # アクセスを制限するモジュール
+      default:
+        is_secure: true
+        # 認証されていないユーザーをログインページへリダイレクト
+        redirect: /login

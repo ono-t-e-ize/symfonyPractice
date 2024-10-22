@@ -20,8 +20,6 @@ abstract class BaseProductForm extends BaseFormDoctrine
       'price'       => new sfWidgetFormInputText(),
       'description' => new sfWidgetFormInputText(),
       'image'       => new sfWidgetFormInputText(),
-      'created_at'  => new sfWidgetFormDateTime(),
-      'updated_at'  => new sfWidgetFormDateTime(),
     ));
 
     $this->setValidators(array(
@@ -30,8 +28,6 @@ abstract class BaseProductForm extends BaseFormDoctrine
       'price'       => new sfValidatorNumber(array('required' => false)),
       'description' => new sfValidatorPass(array('required' => false)),
       'image'       => new sfValidatorString(array('max_length' => 255, 'required' => false)),
-      'created_at'  => new sfValidatorDateTime(),
-      'updated_at'  => new sfValidatorDateTime(),
     ));
 
     $this->widgetSchema->setNameFormat('product[%s]');

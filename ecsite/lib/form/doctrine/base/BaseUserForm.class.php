@@ -22,8 +22,6 @@ abstract class BaseUserForm extends BaseFormDoctrine
       'phone'      => new sfWidgetFormInputText(),
       'password'   => new sfWidgetFormInputText(),
       'address'    => new sfWidgetFormInputText(),
-      'created_at' => new sfWidgetFormDateTime(),
-      'updated_at' => new sfWidgetFormDateTime(),
     ));
 
     $this->setValidators(array(
@@ -34,8 +32,6 @@ abstract class BaseUserForm extends BaseFormDoctrine
       'phone'      => new sfValidatorString(array('max_length' => 20, 'required' => false)),
       'password'   => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'address'    => new sfValidatorPass(array('required' => false)),
-      'created_at' => new sfValidatorDateTime(),
-      'updated_at' => new sfValidatorDateTime(),
     ));
 
     $this->validatorSchema->setPostValidator(

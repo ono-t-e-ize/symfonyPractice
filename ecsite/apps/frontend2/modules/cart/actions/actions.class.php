@@ -34,6 +34,12 @@ class cartActions extends sfActions
 
     $this->form = new CartForm();
 
+    $productName = $request->getParameter('product_name');
+    $productId = $request->getParameter('user_id');
+
+    $this->form->setDefault('product', $productName);
+    $this->form->setDefault('user', $productId);
+
     $this->processForm($request, $this->form);
 
     $this->setTemplate('new');
@@ -79,5 +85,38 @@ Deprecated: preg_replace(): The /e modifier is deprecated, use preg_replace_call
 Deprecated: preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in C:\xampp\htdocs\development\sfprojects\ecsite\lib\vendor\symfony\lib\util\sfToolkit.class.php on line 362
 id='.$cart->getId());
     }
+  }
+
+  public function executeCartStock(sfWebRequest $request)
+  {
+      // セッションからユーザーIDを取得
+      $userId = $this->getUser()->getAttribute('user_id');
+
+      // 商品かごに遷移する
+      if ($userId) {
+          $this->productIds = Doctrine_Core::getTable('Cart')
+          ->createQuery('c')
+          ->where('c.user_id = ?', $userId)
+          ->select('c.product_id')
+          ->execute()
+          ->toArray(); // ここで結果を配列に変換
+
+          // var_dump($this->productIds);
+
+          $this->productIds = array_column($this->productIds, 'product_id');
+          // さらに、product_idだけの配列を作成
+
+          $this->products = [];
+          foreach ($this->productIds as $productId) {
+            $this->products = Doctrine_Core::getTable('Product')
+            ->createQuery('p')
+            ->where('p.id = ?', $productId)
+            ->select('p.name, p.price, p.image')
+            ->execute();
+          }
+      } else {
+          // ユーザーがログインしていない場合の処理
+          return $this->redirect('login/index');
+      }
   }
 }

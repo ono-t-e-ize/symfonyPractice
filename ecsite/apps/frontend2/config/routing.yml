@@ -14,3 +14,19 @@ default_index:
 
 default:
   url:   /:module/:action/*
+
+user_login:
+  url:   /user/login
+  param: { module: user, action: login }
+
+user_logout:
+  url:   /user/logout
+  param: { module: user, action: logout }
+
+cart_cartStock:
+  url:   /cart/cartStock
+  param: { module: cart, action: cartStock }
+
+cart_orderRegister:
+  url:   /cart/ordeRegister
+  param: { module: cart, action: ordeRegister }

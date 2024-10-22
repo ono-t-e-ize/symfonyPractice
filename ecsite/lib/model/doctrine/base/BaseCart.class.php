@@ -59,8 +59,5 @@ abstract class BaseCart extends sfDoctrineRecord
              'local' => 'product_id',
              'foreign' => 'id',
              'onDelete' => 'CASCADE'));
-
-        $timestampable0 = new Doctrine_Template_Timestampable();
-        $this->actAs($timestampable0);
     }
 }

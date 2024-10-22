@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="header-content">
-            <h1>ECサイト</h1>
+            <h1>店舗管理</h1>
         </div>
     </header>
 

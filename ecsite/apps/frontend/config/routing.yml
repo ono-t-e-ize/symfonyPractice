@@ -24,3 +24,10 @@ order:
   url:   /order
   param: { module: order, action: index }
 
+user_login:
+  url:   /user/login
+  param: { module: user, action: login }
+
+user_logout:
+  url:   /user/logout
+  param: { module: user, action: logout }

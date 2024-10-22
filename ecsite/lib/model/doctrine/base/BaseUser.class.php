@@ -80,8 +80,5 @@ abstract class BaseUser extends sfDoctrineRecord
              'local' => 'id',
              'foreign' => 'user_id',
              'onDelete' => 'CASCADE'));
-
-        $timestampable0 = new Doctrine_Template_Timestampable();
-        $this->actAs($timestampable0);
     }
 }

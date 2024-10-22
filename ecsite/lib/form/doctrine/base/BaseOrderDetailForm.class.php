@@ -20,8 +20,6 @@ abstract class BaseOrderDetailForm extends BaseFormDoctrine
       'total_amount'     => new sfWidgetFormInputText(),
       'customer_name'    => new sfWidgetFormInputText(),
       'delivery_address' => new sfWidgetFormInputText(),
-      'created_at'       => new sfWidgetFormDateTime(),
-      'updated_at'       => new sfWidgetFormDateTime(),
     ));
 
     $this->setValidators(array(
@@ -30,8 +28,6 @@ abstract class BaseOrderDetailForm extends BaseFormDoctrine
       'total_amount'     => new sfValidatorNumber(),
       'customer_name'    => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'delivery_address' => new sfValidatorPass(array('required' => false)),
-      'created_at'       => new sfValidatorDateTime(),
-      'updated_at'       => new sfValidatorDateTime(),
     ));
 
     $this->widgetSchema->setNameFormat('order_detail[%s]');

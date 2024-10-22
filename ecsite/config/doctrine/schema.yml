@@ -1,6 +1,5 @@
 # ユーザー情報テーブル
 User:
-  actAs: { Timestampable: ~ }
   columns:
     id: { type: integer, primary: true, autoincrement: true }
     last_name: { type: string(255) }
@@ -15,7 +14,6 @@ User:
 
 # 商品情報テーブル
 Product:
-  actAs: { Timestampable: ~ }
   columns:
     id: { type: integer, primary: true, autoincrement: true }
     name: { type: string(255), notnull: true }
@@ -28,7 +26,6 @@ Product:
 
 # 注文情報テーブル
 OrderDetail:
-  actAs: { Timestampable: ~ }
   columns:
     id: { type: integer, primary: true, autoincrement: true }
     product_name: { type: string(255) }
@@ -38,7 +35,6 @@ OrderDetail:
 
 # カート内情報
 Cart:
-  actAs: { Timestampable: ~ }
   columns:
     id: { type: integer, primary: true, autoincrement: true }
     user_id: { type: integer, notnull: true }

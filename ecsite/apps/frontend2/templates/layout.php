@@ -1,14 +1,30 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <?php include_http_metas() ?>
-    <?php include_metas() ?>
-    <?php include_title() ?>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <?php include_stylesheets() ?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="<?php echo stylesheet_path('main') ?>">
     <?php include_javascripts() ?>
-  </head>
-  <body>
-    <?php echo $sf_content ?>
-  </body>
+    <?php include_stylesheets() ?>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>店舗</h1>
+        </div>
+        <form action="<?php echo url_for('cart/cartStock') ?>" method="post">
+         <button type="submit">商品かご</button>
+        </form>
+        <button id="logout">
+          ログアウト
+        </button>
+    </header>
+
+    <main>
+        <?php echo $sf_content ?>
+    </main>
+
+    <footer>
+        <p>&copy; <?php echo date('Y') ?> ECサイト</p>
+    </footer>
+</body>
 </html>
