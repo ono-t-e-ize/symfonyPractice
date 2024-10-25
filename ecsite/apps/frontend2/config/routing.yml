@@ -27,6 +27,10 @@ cart_cartStock:
   url:   /cart/cartStock
   param: { module: cart, action: cartStock }
 
-cart_orderRegister:
-  url:   /cart/ordeRegister
-  param: { module: cart, action: ordeRegister }
+orderDetail_confirm:
+  url:   /orderDetail/confirm 
+  param: { module: orderDetail, action: confirm }
+
+cart_delete:
+  url:   /cart/delete
+  param: { module: cart, action: delete }

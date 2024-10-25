@@ -1,42 +1,149 @@
-Oct 22 03:40:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/logout with parameters array (  'module' => 'user',  'action' => 'logout',)
-Oct 22 03:40:58 symfony [info] {myUser} Automatic user logout due to timeout
-Oct 22 03:40:58 symfony [info] {myUser} User is not authenticated
-Oct 22 03:40:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Oct 22 03:40:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Oct 22 03:40:58 symfony [info] {userActions} Call "userActions->executeLogout()"
-Oct 22 03:40:58 symfony [info] {sfFrontWebController} Redirect to "http://localhost/sfprojects/ecsite/web/frontend_dev.php/user/login"
-Oct 22 03:40:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
-Oct 22 03:40:58 symfony [info] {sfWebResponse} Send header "Location: http://localhost/sfprojects/ecsite/web/frontend_dev.php/user/login"
-Oct 22 03:40:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Oct 22 03:40:58 symfony [info] {sfWebDebugLogger} Configuration 19.92 ms (8)
-Oct 22 03:40:58 symfony [info] {sfWebDebugLogger} Factories 43.14 ms (1)
-Oct 22 03:40:58 symfony [info] {sfWebDebugLogger} Action "user/logout" 1.22 ms (1)
-Oct 22 03:40:58 symfony [info] {sfWebResponse} Send content (137 o)
-Oct 22 03:40:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
-Oct 22 03:40:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Oct 22 03:40:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Oct 22 03:40:58 symfony [info] {userActions} Call "userActions->executeLogin()"
-Oct 22 03:40:58 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/user/templates/loginSuccess.php"
-Oct 22 03:40:58 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
-Oct 22 03:40:58 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
-Oct 22 03:40:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Oct 22 03:40:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Oct 22 03:40:58 symfony [info] {sfWebDebugLogger} Configuration 18.49 ms (9)
-Oct 22 03:40:58 symfony [info] {sfWebDebugLogger} Factories 34.58 ms (1)
-Oct 22 03:40:58 symfony [info] {sfWebDebugLogger} Action "user/login" 8.14 ms (1)
-Oct 22 03:40:58 symfony [info] {sfWebDebugLogger} View "Success" for "user/login" 20.27 ms (1)
-Oct 22 03:40:58 symfony [info] {sfWebResponse} Send content (34065 o)
-Oct 22 03:41:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
-Oct 22 03:41:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Oct 22 03:41:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Oct 22 03:41:08 symfony [info] {userActions} Call "userActions->executeLogin()"
-Oct 22 03:41:08 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/user/templates/loginSuccess.php"
-Oct 22 03:41:08 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
-Oct 22 03:41:08 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
-Oct 22 03:41:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Oct 22 03:41:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Oct 22 03:41:08 symfony [info] {sfWebDebugLogger} Configuration 16.59 ms (9)
-Oct 22 03:41:08 symfony [info] {sfWebDebugLogger} Factories 38.68 ms (1)
-Oct 22 03:41:08 symfony [info] {sfWebDebugLogger} Action "user/login" 6.17 ms (1)
-Oct 22 03:41:08 symfony [info] {sfWebDebugLogger} View "Success" for "user/login" 15.55 ms (1)
-Oct 22 03:41:08 symfony [info] {sfWebResponse} Send content (34699 o)
+Oct 25 11:41:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Oct 25 11:41:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 25 11:41:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 25 11:41:39 symfony [info] {userActions} Call "userActions->executeLogin()"
+Oct 25 11:41:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/user/templates/loginSuccess.php"
+Oct 25 11:41:39 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 25 11:41:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 25 11:41:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 25 11:41:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} Configuration 13.26 ms (9)
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} Factories 36.45 ms (1)
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} Action "user/login" 7.05 ms (1)
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} View "Success" for "user/login" 19.36 ms (1)
+Oct 25 11:41:39 symfony [info] {sfWebResponse} Send content (34309 o)
+Oct 25 11:41:39 symfony [info] {sfPatternRouting} Match route "product" (/product) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 25 11:41:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 25 11:41:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 25 11:41:39 symfony [info] {productActions} Call "productActions->executeIndex()"
+Oct 25 11:41:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 25 11:41:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.price AS p__price, p.description AS p__description, p.image AS p__image FROM product p - ()
+Oct 25 11:41:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/indexSuccess.php"
+Oct 25 11:41:39 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 25 11:41:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 25 11:41:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 25 11:41:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} Configuration 15.79 ms (9)
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} Factories 49.98 ms (1)
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} Action "product/index" 45.65 ms (1)
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.75 ms (2)
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 14.60 ms (1)
+Oct 25 11:41:39 symfony [info] {sfWebResponse} Send content (37945 o)
+Oct 25 11:41:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /z with parameters array (  'module' => 'z',  'action' => 'index',)
+Oct 25 11:41:39 symfony [info] {sfFrontWebController} Action "z/index" does not exist
+Oct 25 11:41:39 symfony [err] {sfError404Exception} Action "z/index" does not exist.
+Oct 25 11:41:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 25 11:41:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} Configuration 6.64 ms (5)
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} Factories 97.97 ms (1)
+Oct 25 11:41:39 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/.img" (/).
+Oct 25 11:41:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 25 11:41:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} Configuration 8.75 ms (5)
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} Factories 139.80 ms (1)
+Oct 25 11:41:39 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/product_a.jpg" (/).
+Oct 25 11:41:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 25 11:41:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} Configuration 8.71 ms (5)
+Oct 25 11:41:39 symfony [info] {sfWebDebugLogger} Factories 187.05 ms (1)
+Oct 25 11:41:40 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/product_b.jpg" (/).
+Oct 25 11:41:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 25 11:41:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:41:40 symfony [info] {sfWebDebugLogger} Configuration 12.24 ms (5)
+Oct 25 11:41:40 symfony [info] {sfWebDebugLogger} Factories 218.16 ms (1)
+Oct 25 11:41:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Oct 25 11:41:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 25 11:41:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 25 11:41:42 symfony [info] {userActions} Call "userActions->executeLogin()"
+Oct 25 11:41:42 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/user/templates/loginSuccess.php"
+Oct 25 11:41:42 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 25 11:41:42 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 25 11:41:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 25 11:41:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:41:42 symfony [info] {sfWebDebugLogger} Configuration 12.76 ms (9)
+Oct 25 11:41:42 symfony [info] {sfWebDebugLogger} Factories 35.52 ms (1)
+Oct 25 11:41:42 symfony [info] {sfWebDebugLogger} Action "user/login" 5.06 ms (1)
+Oct 25 11:41:42 symfony [info] {sfWebDebugLogger} View "Success" for "user/login" 20.30 ms (1)
+Oct 25 11:41:42 symfony [info] {sfWebResponse} Send content (34311 o)
+Oct 25 11:41:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Oct 25 11:41:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 25 11:41:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 25 11:41:48 symfony [info] {userActions} Call "userActions->executeLogin()"
+Oct 25 11:41:48 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/user/templates/loginSuccess.php"
+Oct 25 11:41:48 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 25 11:41:48 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 25 11:41:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 25 11:41:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:41:48 symfony [info] {sfWebDebugLogger} Configuration 9.81 ms (9)
+Oct 25 11:41:48 symfony [info] {sfWebDebugLogger} Factories 32.93 ms (1)
+Oct 25 11:41:48 symfony [info] {sfWebDebugLogger} Action "user/login" 5.27 ms (1)
+Oct 25 11:41:48 symfony [info] {sfWebDebugLogger} View "Success" for "user/login" 17.78 ms (1)
+Oct 25 11:41:48 symfony [info] {sfWebResponse} Send content (34943 o)
+Oct 25 11:42:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Oct 25 11:42:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 25 11:42:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 25 11:42:39 symfony [info] {userActions} Call "userActions->executeLogin()"
+Oct 25 11:42:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/user/templates/loginSuccess.php"
+Oct 25 11:42:39 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 25 11:42:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 25 11:42:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 25 11:42:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:42:39 symfony [info] {sfWebDebugLogger} Configuration 12.70 ms (9)
+Oct 25 11:42:39 symfony [info] {sfWebDebugLogger} Factories 32.83 ms (1)
+Oct 25 11:42:39 symfony [info] {sfWebDebugLogger} Action "user/login" 4.89 ms (1)
+Oct 25 11:42:39 symfony [info] {sfWebDebugLogger} View "Success" for "user/login" 18.69 ms (1)
+Oct 25 11:42:39 symfony [info] {sfWebResponse} Send content (34068 o)
+Oct 25 11:42:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Oct 25 11:42:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 25 11:42:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 25 11:42:44 symfony [info] {userActions} Call "userActions->executeLogin()"
+Oct 25 11:42:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 25 11:42:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.last_name AS u__last_name, u.first_name AS u__first_name, u.email AS u__email, u.phone AS u__phone, u.password AS u__password, u.address AS u__address FROM user u WHERE (u.email = ?) LIMIT 1 - (taro.yamada@example.com)
+Oct 25 11:42:44 symfony [info] {sfFrontWebController} Redirect to "http://localhost/sfprojects/ecsite/web/frontend_dev.php/product"
+Oct 25 11:42:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Oct 25 11:42:44 symfony [info] {sfWebResponse} Send header "Location: http://localhost/sfprojects/ecsite/web/frontend_dev.php/product"
+Oct 25 11:42:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:42:44 symfony [info] {sfWebDebugLogger} Configuration 11.99 ms (8)
+Oct 25 11:42:44 symfony [info] {sfWebDebugLogger} Factories 31.44 ms (1)
+Oct 25 11:42:44 symfony [info] {sfWebDebugLogger} Action "user/login" 38.62 ms (1)
+Oct 25 11:42:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.01 ms (2)
+Oct 25 11:42:44 symfony [info] {sfWebResponse} Send content (134 o)
+Oct 25 11:42:44 symfony [info] {sfPatternRouting} Match route "product" (/product) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Oct 25 11:42:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 25 11:42:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 25 11:42:44 symfony [info] {productActions} Call "productActions->executeIndex()"
+Oct 25 11:42:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Oct 25 11:42:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.price AS p__price, p.description AS p__description, p.image AS p__image FROM product p - ()
+Oct 25 11:42:44 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\modules/product/templates/indexSuccess.php"
+Oct 25 11:42:44 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 25 11:42:44 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\development\sfprojects\ecsite\apps\frontend\templates/layout.php"
+Oct 25 11:42:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 25 11:42:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:42:44 symfony [info] {sfWebDebugLogger} Configuration 13.35 ms (9)
+Oct 25 11:42:44 symfony [info] {sfWebDebugLogger} Factories 32.03 ms (1)
+Oct 25 11:42:44 symfony [info] {sfWebDebugLogger} Action "product/index" 34.22 ms (1)
+Oct 25 11:42:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.79 ms (2)
+Oct 25 11:42:44 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 15.22 ms (1)
+Oct 25 11:42:44 symfony [info] {sfWebResponse} Send content (37945 o)
+Oct 25 11:42:44 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /z with parameters array (  'module' => 'z',  'action' => 'index',)
+Oct 25 11:42:44 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/product_b.jpg" (/).
+Oct 25 11:42:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 25 11:42:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:42:44 symfony [info] {sfWebDebugLogger} Configuration 11.84 ms (5)
+Oct 25 11:42:44 symfony [info] {sfWebDebugLogger} Factories 103.02 ms (1)
+Oct 25 11:42:45 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/.img" (/).
+Oct 25 11:42:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 25 11:42:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:42:45 symfony [info] {sfWebDebugLogger} Configuration 10.64 ms (5)
+Oct 25 11:42:45 symfony [info] {sfWebDebugLogger} Factories 151.76 ms (1)
+Oct 25 11:42:45 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/product_a.jpg" (/).
+Oct 25 11:42:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 25 11:42:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:42:45 symfony [info] {sfWebDebugLogger} Configuration 10.74 ms (5)
+Oct 25 11:42:45 symfony [info] {sfWebDebugLogger} Factories 199.76 ms (1)
+Oct 25 11:42:45 symfony [info] {sfFrontWebController} Action "z/index" does not exist
+Oct 25 11:42:45 symfony [err] {sfError404Exception} Action "z/index" does not exist.
+Oct 25 11:42:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Oct 25 11:42:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 25 11:42:45 symfony [info] {sfWebDebugLogger} Configuration 10.53 ms (5)
+Oct 25 11:42:45 symfony [info] {sfWebDebugLogger} Factories 246.55 ms (1)

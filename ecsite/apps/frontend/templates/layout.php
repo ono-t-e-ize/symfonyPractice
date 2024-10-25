@@ -11,6 +11,9 @@
         <div class="header-content">
             <h1>店舗管理</h1>
         </div>
+        <form action="<?php echo url_for('user/logout') ?>" method="post">
+         <button type="submit">ログアウト</button>
+        </form>
     </header>
 
     <main>

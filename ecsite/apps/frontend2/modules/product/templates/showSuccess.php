@@ -23,8 +23,8 @@
   </tbody>
 </table>
 <form action="<?php echo url_for('cart/create') ?>" method="post">
-    <input type="hidden" name="user_id" value="<?php echo $userId ?>" />
-    <input type="hidden" name="product_name" value="<?php echo $product->getname() ?>" />
+    <input type="hidden" name="userId" value="<?php echo $userId ?>" />
+    <input type="hidden" name="productId" value="<?php echo $product->getId() ?>" />
     <input type="submit" value="商品かごに追加" />
 </form>
 <!-- <form id="add-to-cart-form" action="<?php echo url_for('cart/create') ?>" method="post">

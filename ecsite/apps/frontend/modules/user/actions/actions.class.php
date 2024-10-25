@@ -80,32 +80,32 @@ Deprecated: preg_replace(): The /e modifier is deprecated, use preg_replace_call
 id='.$user->getId());
     }
   }
-
+  
   public function executeLogin(sfWebRequest $request)
- {
-  $this->form = new LoginForm();
-
-  if ($request->isMethod('post')) {
-    $this->form->bind($request->getParameter($this->form->getName()));
-    if ($this->form->isValid()) {
-      $email = $this->form->getValue('email');
-      $password = $this->form->getValue('password');
-
-      $user = Doctrine_Core::getTable('User')->findOneBy('email', $email);
-      if ($user && $user->getPassword() === $password) { 
-        $this->getUser()->setAttribute('user_id', $user->getId());
-        $this->redirect('product/index'); 
-      } else {
-        $this->getUser()->setFlash('error', 'Invalid email or password.');
+  {
+    $this->form = new LoginForm();
+  
+    if ($request->isMethod('post')) {
+      $this->form->bind($request->getParameter($this->form->getName()));
+      if ($this->form->isValid()) {
+        $email = $this->form->getValue('email');
+        $password = $this->form->getValue('password');
+  
+        $user = Doctrine_Core::getTable('User')->findOneBy('email', $email);
+        if ($user && $user->getPassword() === $password) {
+          $this->getUser()->setAttribute('user_id', $user->getId());
+          $this->redirect('product/index'); 
+        } else {
+          $this->getUser()->setFlash('error', 'Invalid email or password.');
+        }
       }
     }
   }
- }
-  
+
   public function executeLogout(sfWebRequest $request)
- {
-  $this->getUser()->setAttribute('user_id', null);
-  $this->redirect('user/login'); 
- }
+  {
+    $this->getUser()->setAttribute('user_id', null);
+    $this->redirect('user/login'); 
+  }
 
 }

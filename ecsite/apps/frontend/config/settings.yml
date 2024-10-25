@@ -22,14 +22,30 @@ test:
     no_script_name:         false
     etag:                   false
 
+# all:
+#   .settings:
+#     # Form security secret (CSRF protection)
+#     csrf_secret:            7e353715d8b4151b00da3c046cfee2b8e12c8160
+
+#     # Output escaping settings
+#     escaping_strategy:      true
+#     escaping_method:        ESC_SPECIALCHARS
+
+#     # Enable the database manager
+#     use_database:           true
+
 all:
   .settings:
-    # Form security secret (CSRF protection)
-    csrf_secret:            7e353715d8b4151b00da3c046cfee2b8e12c8160
-
     # Output escaping settings
     escaping_strategy:      true
     escaping_method:        ESC_SPECIALCHARS
 
     # Enable the database manager
     use_database:           true
+
+    security:
+      # アクセスを制限するモジュール
+      default:
+        is_secure: true
+        # 認証されていないユーザーをログインページへリダイレクト
+        redirect: /login

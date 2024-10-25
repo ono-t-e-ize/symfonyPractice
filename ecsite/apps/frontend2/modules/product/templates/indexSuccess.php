@@ -1,13 +1,13 @@
-<h1>Products List</h1>
+<h1>商品一覧</h1>
 
 <table>
   <thead>
     <tr>
       <th>Id</th>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Description</th>
-      <th>Image</th>
+      <th>商品名</th>
+      <th>価格</th>
+      <th>商品説明</th>
+      <th>イメージ</th>
     </tr>
   </thead>
   <tbody>

@@ -74,11 +74,7 @@ class productActions extends sfActions
     {
       $product = $form->save();
 
-      $this->redirect('product/edit?
-Deprecated: preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in C:\xampp\htdocs\development\sfprojects\ecsite\lib\vendor\symfony\lib\util\sfToolkit.class.php on line 362
-
-Deprecated: preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in C:\xampp\htdocs\development\sfprojects\ecsite\lib\vendor\symfony\lib\util\sfToolkit.class.php on line 362
-id='.$product->getId());
+      $this->redirect();
     }
   }
 }

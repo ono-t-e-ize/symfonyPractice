@@ -22,11 +22,20 @@ test:
     no_script_name:         false
     etag:                   false
 
+# all:
+#   .settings:
+#     # Form security secret (CSRF protection)
+#     csrf_secret:            af256460dd8d794a04e1be65b6a7f1b099c7523d
+
+#     # Output escaping settings
+#     escaping_strategy:      true
+#     escaping_method:        ESC_SPECIALCHARS
+
+#     # Enable the database manager
+#     use_database:           true
+
 all:
   .settings:
-    # Form security secret (CSRF protection)
-    csrf_secret:            af256460dd8d794a04e1be65b6a7f1b099c7523d
-
     # Output escaping settings
     escaping_strategy:      true
     escaping_method:        ESC_SPECIALCHARS
@@ -34,8 +43,6 @@ all:
     # Enable the database manager
     use_database:           true
 
-all:
-  .settings:
     security:
       # アクセスを制限するモジュール
       default:

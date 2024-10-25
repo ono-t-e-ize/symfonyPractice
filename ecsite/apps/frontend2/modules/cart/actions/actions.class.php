@@ -34,11 +34,13 @@ class cartActions extends sfActions
 
     $this->form = new CartForm();
 
-    $productName = $request->getParameter('product_name');
-    $productId = $request->getParameter('user_id');
+    $userId = $request->getParameter('userId');
+    $productId = $request->getParameter('productId');
 
-    $this->form->setDefault('product', $productName);
-    $this->form->setDefault('user', $productId);
+    $request = [];
+    $request["user_id"] = $userId;
+    $request["product_id"] = $productId;
+    $request["id"] = '' ;
 
     $this->processForm($request, $this->form);
 
@@ -65,58 +67,58 @@ class cartActions extends sfActions
   public function executeDelete(sfWebRequest $request)
   {
     $request->checkCSRFProtection();
-
+    var_dump($request->getParameter('id'));
     $this->forward404Unless($cart = Doctrine_Core::getTable('Cart')->find(array($request->getParameter('id'))), sprintf('Object cart does not exist (%s).', $request->getParameter('id')));
     $cart->delete();
-
-    $this->redirect('cart/index');
+    // $this->redirect('cart/delete');
   }
 
-  protected function processForm(sfWebRequest $request, sfForm $form)
+  protected function processForm($request, sfForm $form)
   {
-    $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
+    $form->bind($request, []);
     if ($form->isValid())
     {
       $cart = $form->save();
 
-      $this->redirect('cart/edit?
-Deprecated: preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in C:\xampp\htdocs\development\sfprojects\ecsite\lib\vendor\symfony\lib\util\sfToolkit.class.php on line 362
-
-Deprecated: preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in C:\xampp\htdocs\development\sfprojects\ecsite\lib\vendor\symfony\lib\util\sfToolkit.class.php on line 362
-id='.$cart->getId());
+      $this->redirect('product/index');
     }
   }
 
   public function executeCartStock(sfWebRequest $request)
   {
       // セッションからユーザーIDを取得
-      $userId = $this->getUser()->getAttribute('user_id');
+      $this->userId = $this->getUser()->getAttribute('user_id');
 
-      // 商品かごに遷移する
-      if ($userId) {
+      if ($this->userId) {
           $this->productIds = Doctrine_Core::getTable('Cart')
           ->createQuery('c')
-          ->where('c.user_id = ?', $userId)
+          ->where('c.user_id = ?', $this->userId)
           ->select('c.product_id')
           ->execute()
-          ->toArray(); // ここで結果を配列に変換
+          ->toArray(); 
 
-          // var_dump($this->productIds);
-
-          $this->productIds = array_column($this->productIds, 'product_id');
           // さらに、product_idだけの配列を作成
+          $this->productIds = array_column($this->productIds, 'product_id');
 
-          $this->products = [];
+          $this->products = []; 
           foreach ($this->productIds as $productId) {
-            $this->products = Doctrine_Core::getTable('Product')
-            ->createQuery('p')
-            ->where('p.id = ?', $productId)
-            ->select('p.name, p.price, p.image')
-            ->execute();
+              $product = Doctrine_Core::getTable('Product')
+                  ->createQuery('p')
+                  ->where('p.id = ?', $productId)
+                  ->select('p.name, p.price, p.image')
+                  ->fetchOne(); 
+          
+              if ($product) {
+                  $this->products[] = [
+                      'name' => $product->getName(),
+                      'price' => $product->getPrice(),
+                      'image' => $product->getImage(),
+                  ];
+              }
           }
       } else {
           // ユーザーがログインしていない場合の処理
-          return $this->redirect('login/index');
+          return $this->redirect('user/login');
       }
   }
 }
