@@ -12,7 +12,13 @@
             <h1>店舗管理</h1>
         </div>
         <form action="<?php echo url_for('user/logout') ?>" method="post">
-         <button type="submit">ログアウト</button>
+            <button type="submit">ログアウト</button>
+        </form>
+        <form action="<?php echo url_for('orderDetail/index') ?>" method="post">
+            <button type="submit">注文一覧</button>
+        </form>
+        <form action="<?php echo url_for('product/index') ?>" method="post">
+            <button type="submit">商品一覧</button>
         </form>
     </header>
 

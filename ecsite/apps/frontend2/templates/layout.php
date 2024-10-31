@@ -14,6 +14,9 @@
         <form action="<?php echo url_for('cart/cartStock') ?>" method="post">
          <button type="submit">商品かご</button>
         </form>
+        <form action="<?php echo url_for('product/index') ?>" method="post">
+         <button type="submit">商品一覧</button>
+        </form>
         <form action="<?php echo url_for('user/logout') ?>" method="post">
          <button type="submit">ログアウト</button>
         </form>

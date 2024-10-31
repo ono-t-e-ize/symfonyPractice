@@ -13,11 +13,7 @@
         <tfoot>
             <tr>
                 <td colspan="2">
-                    &nbsp;<a href="<?php echo url_for('orderDetail/index') ?>">Back to list</a>
-                    <?php if (!$form->getObject()->isNew()): ?>
-                        &nbsp;<?php echo link_to('Delete', 'orderDetail/delete?id=' . $form->getObject()->getId(), 
-                        array('method' => 'delete', 'confirm' => 'Are you sure?')) ?>
-                    <?php endif; ?>
+                    &nbsp;<a href="<?php echo url_for('product/index') ?>">商品一覧へ戻る</a>
                     <input type="submit" value="Save" />
                 </td>
             </tr>

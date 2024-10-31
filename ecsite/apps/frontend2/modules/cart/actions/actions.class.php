@@ -67,10 +67,10 @@ class cartActions extends sfActions
   public function executeDelete(sfWebRequest $request)
   {
     $request->checkCSRFProtection();
-    var_dump($request->getParameter('id'));
     $this->forward404Unless($cart = Doctrine_Core::getTable('Cart')->find(array($request->getParameter('id'))), sprintf('Object cart does not exist (%s).', $request->getParameter('id')));
     $cart->delete();
-    // $this->redirect('cart/delete');
+    $this->redirect('cart/cartStock');
+
   }
 
   protected function processForm($request, sfForm $form)
@@ -86,39 +86,42 @@ class cartActions extends sfActions
 
   public function executeCartStock(sfWebRequest $request)
   {
-      // セッションからユーザーIDを取得
-      $this->userId = $this->getUser()->getAttribute('user_id');
+   // セッションからユーザーIDを取得
+   $this->userId = $this->getUser()->getAttribute('user_id');
 
-      if ($this->userId) {
-          $this->productIds = Doctrine_Core::getTable('Cart')
-          ->createQuery('c')
-          ->where('c.user_id = ?', $this->userId)
-          ->select('c.product_id')
-          ->execute()
-          ->toArray(); 
+    if ($this->userId) {
+      $this->ids = Doctrine_Core::getTable('Cart')
+      ->createQuery('c')
+      ->where('c.user_id = ?', $this->userId)
+      ->select('c.id, c.product_id')
+      ->execute()
+      ->toArray(); 
+      $this->cartIds = array_column($this->ids, 'id');
+      // さらに、product_idだけの配列を作成
+      $this->productIds = array_column($this->ids, 'product_id');
+      $combined = array_combine($this->productIds, $this->cartIds);
 
-          // さらに、product_idだけの配列を作成
-          $this->productIds = array_column($this->productIds, 'product_id');
-
-          $this->products = []; 
-          foreach ($this->productIds as $productId) {
-              $product = Doctrine_Core::getTable('Product')
-                  ->createQuery('p')
-                  ->where('p.id = ?', $productId)
-                  ->select('p.name, p.price, p.image')
-                  ->fetchOne(); 
-          
-              if ($product) {
-                  $this->products[] = [
-                      'name' => $product->getName(),
-                      'price' => $product->getPrice(),
-                      'image' => $product->getImage(),
-                  ];
-              }
-          }
-      } else {
-          // ユーザーがログインしていない場合の処理
-          return $this->redirect('user/login');
+      $this->products = []; 
+      foreach ($combined as $productId => $cartId) {
+        $product = Doctrine_Core::getTable('Product')
+        ->createQuery('p')
+        ->where('p.id = ?', $productId)
+        ->select('p.name, p.price, p.image')
+        ->fetchOne(); 
+        if ($product) {
+          $this->products[] = [
+            'name' => $product->getName(),
+            'price' => $product->getPrice(),
+            'image' => $product->getImage(),
+            'productId' => $productId,
+            'cartId' => $cartId,
+          ];
+        }
       }
+      $this->jsonProducts = json_encode($this->products);
+    } else {
+       // ユーザーがログインしていない場合の処理
+        return $this->redirect('user/login');
+     }
   }
 }

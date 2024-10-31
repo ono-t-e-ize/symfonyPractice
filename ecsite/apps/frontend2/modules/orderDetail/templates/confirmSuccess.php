@@ -25,7 +25,7 @@
    <tr>
      <td>
        <form action="<?php echo url_for('orderDetail/create') ?>" method="post">
-         <input type="hidden" name="productNames" value='<?php echo htmlspecialchars(json_encode($productNames), ENT_QUOTES, 'UTF-8') ?>' />
+         <input type="hidden" name="productNames" value='<?php echo htmlspecialchars($productNames, ENT_QUOTES, 'UTF-8') ?>' />
          <input type="hidden" name="totalAmount" value='<?php echo $totalAmount ?>' />
          <input type="hidden" name="customerName" value='<?php echo $customerName ?>' />
          <input type="hidden" name="userId" value='<?php echo $userId ?>' />

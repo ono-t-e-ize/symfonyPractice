@@ -10,6 +10,13 @@
  */
 class userActions extends sfActions
 {
+
+  public function preExecute()
+  {
+      // レイアウトを無効にする
+      $this->setLayout(false);
+  }
+
   public function executeIndex(sfWebRequest $request)
   {
     $this->users = Doctrine_Core::getTable('User')

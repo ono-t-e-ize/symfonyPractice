@@ -30,7 +30,3 @@ cart_cartStock:
 orderDetail_confirm:
   url:   /orderDetail/confirm 
   param: { module: orderDetail, action: confirm }
-
-cart_delete:
-  url:   /cart/delete
-  param: { module: cart, action: delete }

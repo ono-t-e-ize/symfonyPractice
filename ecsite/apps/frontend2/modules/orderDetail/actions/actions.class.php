@@ -36,6 +36,7 @@ class orderDetailActions extends sfActions
     
     
     $productNames = $request->getParameter('productNames');
+    $productNames = str_replace('&quot;', '"', $productNames);
     $totalAmount = $request->getParameter('totalAmount');
     $customerName = $request->getParameter('customerName');
     $deliveryAddress = $request->getParameter('deliveryAddress');
@@ -50,7 +51,7 @@ class orderDetailActions extends sfActions
 
     $this->processForm($request, $this->form);
    
-    $this->setTemplate('new');
+    // $this->setTemplate('new');
 
     if ($userId) {
       $this->cartIds = Doctrine_Core::getTable('Cart')
@@ -62,15 +63,13 @@ class orderDetailActions extends sfActions
       $this->cartIds = array_column($this->cartIds, 'id');
     }
 
-    foreach($this->cartIds as $cartId){
-      $dispatcher = $this->getContext()->getEventDispatcher(); // sfEventDispatcherのインスタンスを取得
-      $request = new sfWebRequest($dispatcher);
-      $request->setParameter('id', $cartId);
-      var_dump($request->getParameter('id'));
-      // $this->forward('cart', 'delete', $request ); 
+    foreach($this->cartIds as $cartId) {
+      $cart = Doctrine_Core::getTable('Cart')->find(array($cartId));
+      if ($cart) {
+          $cart->delete();
+      }
     }
-
-    // $this->redirect('orderDetail/index');
+    $this->redirect('product/index');
   }
 
   public function executeEdit(sfWebRequest $request)
@@ -108,13 +107,14 @@ class orderDetailActions extends sfActions
     {
       $order_detail = $form->save();
 
-      // $this->redirect('orderDetail/index');
     }
   }
 
   public function executeConfirm(sfWebRequest $request){
     $productDetailJson = $request->getParameter('productDetail');
     $this->userId = $request->getParameter('userId');
+
+    $productDetailJson = str_replace('&quot;', '"', $productDetailJson);
 
     $this->products = json_decode($productDetailJson, true);
 
@@ -125,7 +125,7 @@ class orderDetailActions extends sfActions
         $names[] = $product['name'];
     }
     $this->totalAmount = array_sum(array_map('intval', $prices));
-    $this->productNames = $names;
+    $this->productNames = json_encode($names);
 
     $this->customerName = '';
     if ($this->userId) {

@@ -10,6 +10,13 @@
  */
 class userActions extends sfActions
 {
+
+  public function preExecute()
+  {
+      // レイアウトを無効にする
+      $this->setLayout(false);
+  }
+
   public function executeIndex(sfWebRequest $request)
   {
     $this->users = Doctrine_Core::getTable('User')
@@ -84,7 +91,6 @@ id='.$user->getId());
   public function executeLogin(sfWebRequest $request)
   {
     $this->form = new LoginForm();
-  
     if ($request->isMethod('post')) {
       $this->form->bind($request->getParameter($this->form->getName()));
       if ($this->form->isValid()) {
