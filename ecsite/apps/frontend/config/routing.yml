@@ -4,11 +4,7 @@
 # default rules
 homepage:
   url:   /
-  param: { module: default, action: index }
-
-product:
-  url:   /product
-  param: { module: product, action: index }
+  param: { module: user, action: login }
   
 
 # generic rules

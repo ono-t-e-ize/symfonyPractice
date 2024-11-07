@@ -12,8 +12,14 @@ class ProductForm extends BaseProductForm
 {
     public function configure()
     {
-        // created_atとupdated_atフィールドをオプショナルに設定
-        $this->validatorSchema['created_at'] = new sfValidatorDateTime(array('required' => false));
-        $this->validatorSchema['updated_at'] = new sfValidatorDateTime(array('required' => false));
+        // 既存の設定（もしあれば）
+        
+        // 画像フィールドを追加
+        $this->widgetSchema['image'] = new sfWidgetFormInputFile();
+        $this->validatorSchema['image'] = new sfValidatorFile(array(
+            'required'   => false, 
+            'mime_types' => 'web_images', // 画像ファイルのMIMEタイプを許可
+            'path'       => sfConfig::get('sf_upload_dir') . '/images', // 保存先ディレクトリ
+        ));
     }
 }

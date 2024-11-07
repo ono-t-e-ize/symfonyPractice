@@ -16,8 +16,8 @@
       <td><a href="<?php echo url_for('product/show?id=' . $product->getId()) ?>"><?php echo $product->getId() ?></a></td>
       <td><?php echo $product->getName() ?></td>
       <td><?php echo $product->getPrice() ?></td>
-      <td><?php echo $product->getDescription() ?></td>
-      <td><img src="<?php echo $product->getImage() ?>" alt="<?php echo $product->getName() ?>" /></td>
+      <td><?php echo $product->getDescription() ?></td>      <td><img src="<?php echo sfConfig::get('sf_web_dir'). '\\uploads\\images\\'. $product->getImage()?>" alt="Product Image" />
+      </td>
     </tr>
     <?php endforeach; ?>
   </tbody>

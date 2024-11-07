@@ -73,7 +73,22 @@ class productActions extends sfActions
     {
       $product = $form->save();
 
-      $this->redirect('product/index');
-    }
+      // 画像がアップロードされていた場合、保存処理を行う
+      if ($file = $form->getValue('image'))
+      {
+          // ファイル名を設定（ユニークな名前を付けても良い）
+          $filename = $file->getOriginalName();
+          
+          // // 保存先パスを設定
+          $file->save(sfConfig::get('sf_upload_dir') .'\\images\\' . $filename);
+
+          // DBに画像パスを保存
+          $product->setImage($filename);
+          $product->save();
+      }
+
+      // 商品詳細画面にリダイレクトする場合
+      $this->redirect('product/show?id=' . $product->getId());
+  }
   }
 }
